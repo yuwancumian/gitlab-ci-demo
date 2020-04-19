@@ -1,6 +1,7 @@
 cache:
     paths:
     - node_modules/
+    - build/
 stages:
     - test
     - build
@@ -27,6 +28,5 @@ deploy:
     stage: deploy
     script: echo "deploy stage"
         - echo "deploy stage"
-        - npm run deploy
     tags:
         - pers

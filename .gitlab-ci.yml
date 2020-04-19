@@ -8,14 +8,14 @@ test:
         - echo "test stage"
         - npm run test
     tags:
-        - personal
+        - pers
 build:
     stage: build
     script: 
         - echo "build stage"
         - npm run build 
     tags:
-        - personal
+        - pers
 
 deploy:
     stage: deploy
@@ -23,4 +23,4 @@ deploy:
         - echo "deploy stage"
         - npm run deploy
     tags:
-        - personal
+        - pers

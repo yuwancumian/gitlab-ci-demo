@@ -1,0 +1,26 @@
+stages:
+    - test
+    - build
+    - deploy
+test:
+    stage: test
+    script:
+        - echo "test stage"
+        - npm run test
+    tags:
+        - personal
+build:
+    stage: build
+    script: 
+        - echo "build stage"
+        - npm run build 
+    tags:
+        - personal
+
+deploy:
+    stage: deploy
+    script: echo "deploy stage"
+        - echo "deploy stage"
+        - npm run deploy
+    tags:
+        - personal

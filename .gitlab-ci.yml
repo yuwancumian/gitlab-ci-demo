@@ -18,6 +18,8 @@ build:
     script: 
         - echo "build stage"
         - npm run build 
+        - pwd
+        - ls
     tags:
         - pers
 

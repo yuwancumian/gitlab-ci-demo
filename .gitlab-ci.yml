@@ -6,6 +6,7 @@ test:
     stage: test
     script:
         - echo "test stage"
+        - npm install
         - npm run test
     tags:
         - pers
